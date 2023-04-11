@@ -18,8 +18,18 @@ button:hover {
 }
 
 .card-grid {
+  padding: 1rem;
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
